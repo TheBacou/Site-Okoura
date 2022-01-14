@@ -1,0 +1,162 @@
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* Full-width input fields */
+    span[name=prog], span[name=projet] {
+      width: 100%;
+      background: #acacac;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 22%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #23272a;
+      padding-top: 35px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #d8d8d8;
+      margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 40%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    @media screen and (max-width: 1300px) {
+      .modal-content {
+        width: 70%;
+      }
+      img.avatar {
+        width: 25%;
+      }
+    }
+    </style>
+    <title>Stamina | Présentation</title><link rel="icon" href="https://media.discordapp.net/attachments/880133347895029771/922254849666584646/7802b93a30e3ab288018e2a0c40a1852.png"></head>
+    
+    
+    <body>
+    
+    <div id="id01" class="modal">
+      
+      <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="history.go(-1)" class="close" title="Back">×</span>
+          <img src="https://png.pngtree.com/png-vector/20200809/ourlarge/pngtree-pc-coding-programming-flat-illustration-with-code-script-png-image_2321946.jpg" alt="Copmuter icon" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="prog">Présentation de la programation<label>
+          <span name="prog">C'est quoi la programation ?<br></br><br></br> La programation c'est un language informatique permetant aux ordinateurs tablettes, et tout autres appareils de pouvoir fonctionner. <br></br><br></br>Je vais vous présenter 3 languages de programation :<br></br>Le HTML, CSS et le Java.<br></br><br></br>Le HTML permet de créer des pages web comme celle que vous avez devant vos yeux, vous pouvez faire des barres de recherche et tout autres choses.<br></br>Le CSS permet quant à lui, il permet de rendre les sites web jolies, c'est à dire ajouter de la couleur, faire une belle mise en forme.<br></br>Le Java lui, permet de créer des jeux vidéos, des applications et des logiciels tel que LibreOffice.</span>
+          
+          <label for="projet">Présentation de mon projet</label>
+          <span name="projet">Mon projet ce nome « Stamina », qu'est-ce que Stamina ?<br></br><br>Stamina est un site qui va permettre de pouvoir parler avec d'autres personnes. (Un peu comme Facebook, Discord etc...)</br><br></br><br>Mais ce n'est pas tout, Stamina va aussi être un jeu vidéo portant le même nom, celui-ci sera sur le thème des Légendes, vous pourrez joué en parties privés avec vos amis, ou bien même en parties publique. (c'est à dire avec d'autres joueurs)</br><br></br><br>Vous avez crée votre compte sur le site et vous voulez jouer avec votre compte sur le jeu ?<br>Cela est complètement possible ! Les comptes sont reliés entre la partie site et la partie jeu !</br><br></br><br>Vous voulez demander de l'aide sur un sujet tel que la Programmation, ou bien tout autres choses ?<br></br>Vous allez bientôt pouvoir faire ceci, vous pourrez poster vos questions et des gens y répondrons.</br></br></span>
+        </div>
+    
+        <div class="container" style="background-color:#B3B3B3">
+          <button type="button" onclick="history.go(-1)" class="cancelbtn">Back</button>
+          <span class="psw"><a href="https://stamina-tchat.tk">Site principal</a>, <a href="https://manager.stamina-tchat.tk">Manager</a>, <a href="https://panel.stamina-tchat.tk">Panel</a>, <a href="https://stamina-tchat.tk/présentation">Présentation</a></span>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    </body></html>
