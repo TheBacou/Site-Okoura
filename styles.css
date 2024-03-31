@@ -82,7 +82,6 @@ html {
   }
   
   .l-grid {
-	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-column-gap: 1.6rem;
 	grid-row-gap: 1.6rem;
