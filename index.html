@@ -1,20 +1,26 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
 <div class="l-wrapper">
-    <div class="c-header"><img class="c-logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/813538/km-logo-color.svg" draggable="false"/>
-      <button class="c-button c-button--primary">Rejoindre le discord</button>
+    <div class="c-header"><img class="c-logo" src="https://media.discordapp.net/attachments/864253559268442113/1224325238200864788/20240401_124219.png?ex=661d14bb&is=660a9fbb&hm=a5d427f61418a030e98891b4afbd0a81d0e4cf6613c433bec6f93b7495297ead&=&format=webp&quality=lossless&width=688&height=250" draggable="false"/>
+      <button class="c-button c-button--primary" onclick="location.href='https://discord.gg/okoura-679780145313480735'" type="button">Rejoindre le discord</button>
     </div>
     <div class="l-grid">
       <div class="l-grid__item">
         <div class="c-card">
           <div class="c-card__header">
             <h3>Leaderboard - Niveaux</h3>
+            <div class="autocomplete">
+              <div class="search-container">
+                <input type="text" placeholder="Search Username, Id.." id="search">
+                </div>
+            </div>
           </div>
           <div class="c-card__body">
             <ul class="c-list" id="list">
               <li class="c-list__item">
                 <div class="c-list__grid">
-                  <div class="u-text--left u-text--small u-text--medium">Rank</div>
+                  <div class="u-text--left u-text--small u-text--medium">Rang</div>
                   <div class="u-text--left u-text--small u-text--medium">Membre</div>
                   <div class="u-text--right u-text--small u-text--medium">Niveau</div>
                 </div>
@@ -31,73 +37,73 @@
     {
       rank: 1,
       name: 'Lewis Hamilton',
-      handle: 'lewishamilton',
+      xp: 5005,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col-retina/image.png',
-      kudos: 36,
-      sent: 31 },
+      level: 36,
+      id: 31 },
     {
       rank: 2,
       name: 'Kimi Raikkonen',
-      handle: 'kimimatiasraikkonen',
+      xp: 4635,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/K/KIMRAI01_Kimi_R%C3%A4ikk%C3%B6nen/kimrai01.png.transform/2col-retina/image.png',
-      kudos: 31,
-      sent: 21 },
+      level: 31,
+      id: 21 },
     {
       rank: 3,
       name: 'Sebastian Vettel',
-      handle: 'vettelofficial',
+      xp: 1295,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/S/SEBVET01_Sebastian_Vettel/sebvet01.png.transform/2col-retina/image.png',
-      kudos: 24,
-      sent: 7 },
+      level: 24,
+      id: 7 },
     {
       rank: 4,
       name: 'Max Verstappen',
-      handle: 'maxverstappen1',
+      xp: 15,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col-retina/image.png',
-      kudos: 22,
-      sent: 4 },
+      level: 22,
+      id: 4 },
     {
       rank: 5,
       name: 'Lando Norris',
-      handle: 'landonorris',
+      xp: 2220,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/2col-retina/image.png',
-      kudos: 18,
-      sent: 16 },
+      level: 18,
+      id: 16 },
     {
       rank: 6,
       name: 'Charles Leclerc',
-      handle: 'charles_leclerc',
+      xp: 1995,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/2col-retina/image.png',
-      kudos: 16,
-      sent: 6 },
+      level: 16,
+      id: 6 },
     {
       rank: 7,
       name: 'George Russell',
-      handle: 'georgerussell63',
+      xp: 1645,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/2col-retina/image.png',
-      kudos: 10,
-      sent: 21 },
+      level: 10,
+      id: 21 },
     {
       rank: 8,
       name: 'Daniel Ricciardo',
-      handle: 'danielricciardo',
+      xp: 525,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/D/DANRIC01_Daniel_Ricciardo/danric01.png.transform/2col-retina/image.png',
-      kudos: 7,
-      sent: 46 },
+      level: 7,
+      id: 46 },
     {
       rank: 9,
       name: 'Alexander Albon',
-      handle: 'alex_albon',
+      xp: 635,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/2col-retina/image.png',
-      kudos: 4,
-      sent: 2 },
+      level: 4,
+      id: 2 },
     {
       rank: 10,
       name: 'Carlos Sainz Jr.',
-      handle: 'carlossainz55',
+      xp: 205,
       img: 'https://www.formula1.com/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/2col-retina/image.png',
-      kudos: 1,
-      sent: 24 
+      level: 1,
+      id: 24 
     }];
     
     
@@ -107,18 +113,18 @@
       let newRow = document.createElement('li');
       newRow.classList = 'c-list__item';
       newRow.innerHTML = `
-        <div class="c-list__grid">
+        <div class="c-list__grid" id="${member.id}">
           <div class="c-flag c-place u-bg--transparent">${member.rank}</div>
           <div class="c-media">
             <img class="c-avatar c-media__img" src="${member.img}" />
             <div class="c-media__content">
               <div class="c-media__title">${member.name}</div>
-              <a class="c-media__link u-text--small" /*href="https://instagram.com/${member.handle}" target="_blank"*/>↳ 0 / 150 Xp</a>
+              <a class="c-media__link u-text--small" >↳ ${member.xp} / ${(member.level+1)*150} Xp</a>
             </div>
           </div>
           <div class="u-text--right c-kudos">
             <div class="u-mt--8">
-              <strong id="level">${member.kudos}</strong>
+              <strong id="level">${member.level}</strong>
             </div>
           </div>
         </div>
@@ -127,18 +133,135 @@
         newRow.querySelector('.c-place').classList.add('u-text--dark');
         newRow.querySelector('.c-place').classList.add('u-bg--yellow');
         newRow.querySelector('.c-kudos').classList.add('u-text--yellow');
-        // newRow.querySelector('#c-kudos').innerHTML += " 👑";
       } else if (member.rank === 2) {
         newRow.querySelector('.c-place').classList.add('u-text--dark');
         newRow.querySelector('.c-place').classList.add('u-bg--teal');
         newRow.querySelector('.c-kudos').classList.add('u-text--teal');
-        // newRow.querySelector('#c-kudos').innerHTML += " 🔥";
       } else if (member.rank === 3) {
         newRow.querySelector('.c-place').classList.add('u-text--dark');
         newRow.querySelector('.c-place').classList.add('u-bg--orange');
         newRow.querySelector('.c-kudos').classList.add('u-text--orange');
-        // newRow.querySelector('#c-kudos').innerHTML += " 👍";
       }
       list.appendChild(newRow);
     });
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function autocomplete(inp, arr) {
+    var currentFocus;
+    inp.addEventListener("input", function(e) {
+        var a, b, i, val = this.value;
+        closeAllLists();
+        if (!val) { return false;}
+        currentFocus = -1;
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        this.parentNode.appendChild(a);
+
+        for (i = 0; i < arr.length; i++) {
+          if (arr[i].name.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            b = document.createElement("DIV");
+            b.innerHTML = "<strong>" + arr[i].name.substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].name.substr(val.length);
+            b.innerHTML += "<br>↳ Id: " + arr[i].id
+            b.innerHTML += "<input type='hidden' value='" + arr[i].name + "'>";
+            b.innerHTML += "<input type='hidden' value='" + arr[i].id + "'>";
+            b.addEventListener("click", function(e) {
+                inp.value = this.getElementsByTagName("input")[0].value;
+                scroll(this.getElementsByTagName("input")[1].value)
+                closeAllLists();
+            });
+            a.appendChild(b);
+          } else if (String(arr[i].id).substr(0, val.length) == val) {
+            b = document.createElement("DIV");
+            b.innerHTML = arr[i].name
+            b.innerHTML += "<br>↳ Id: "
+            b.innerHTML += "<strong>" + String(arr[i].id).substr(0, val.length) + "</strong>";
+            b.innerHTML += String(arr[i].id).substr(val.length);
+            b.innerHTML += "<input type='hidden' value='" + arr[i].name + "'>";
+            b.innerHTML += "<input type='hidden' value='" + arr[i].id + "'>";
+            b.addEventListener("click", function(e) {
+                inp.value = this.getElementsByTagName("input")[0].value;
+                scroll(this.getElementsByTagName("input")[1].value)
+                closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+    });
+
+
+    inp.addEventListener("keydown", function(e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          currentFocus++;
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          currentFocus--;
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          e.preventDefault();
+          if (currentFocus > -1) {
+            if (x) x[currentFocus].click();
+          }
+        }
+    });
+
+
+    function addActive(x) {
+      if (!x) return false;
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+
+
+    function removeActive(x) {
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+
+
+    function closeAllLists(elmnt) {
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+          x[i].parentNode.removeChild(x[i]);
+        }
+      }
+    }
+
+    
+    document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+    });
+  }
+  
+
+  autocomplete(document.getElementById("search"), team);
+
+
+
+function scroll(element){   
+    var ele = document.getElementById(element);   
+    window.scrollTo(ele.offsetLeft,ele.offsetTop); 
+}
+  </script>
