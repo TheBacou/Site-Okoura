@@ -664,6 +664,7 @@ html {
 
 .autocomplete-items {
   position: absolute;
+  width: max-content;
   border: 1px solid #d4d4d4;
   border-bottom: none;
   border-top: none;
