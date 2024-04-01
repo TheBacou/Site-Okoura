@@ -39,14 +39,14 @@
       .then((json) => team = json); 
     
     
-    
-    
-    team.forEach(member => {
+  for (i = 0; i < team.length; i++) {
+      let member = team[i][1]
+      member.id = team[i][0]
       let newRow = document.createElement('li');
       newRow.classList = 'c-list__item';
       newRow.innerHTML = `
         <div class="c-list__grid" id="${member.id}">
-          <div class="c-flag c-place u-bg--transparent">${member.rank}</div>
+          <div class="c-flag c-place u-bg--transparent">${i+1}</div>
           <div class="c-media">
             <img class="c-avatar c-media__img" src="${member.img}" />
             <div class="c-media__content">
@@ -75,18 +75,7 @@
         newRow.querySelector('.c-kudos').classList.add('u-text--orange');
       }
       list.appendChild(newRow);
-    });
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 
 
