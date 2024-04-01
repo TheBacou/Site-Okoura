@@ -198,6 +198,13 @@ html {
   .c-media__title {
 	margin-bottom: 0.4rem;
   }
+
+  .c-media__title span {
+    padding-left: 5px;
+    font-size: 13px;
+    color: grey;
+  }
+
   @media screen and (max-width: 700px) {
 	.c-media__title {
 	  font-size: 1.4rem;
